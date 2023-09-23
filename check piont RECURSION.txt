@@ -1,0 +1,17 @@
+The processing for determining if a word is a palindrome can be broken down as follows:
+
+1. Start with the input word.
+2. Compare the characters located at the ends of the word (i.e., the first and last characters).
+3. If these characters are equal, proceed to test the rest of the word.
+4. If the characters at the ends are different, stop and conclude that the word is not a palindrome.
+5. Continue this process by moving inwards, comparing the next characters from the ends.
+6. Repeat steps 2-5 until you either find a pair of different characters, in which case you stop and conclude that the word is not a palindrome, 
+or until you have compared all characters and found them to be equal.
+7. The stop condition for determining a palindrome is:
+   - An empty word (no characters) is considered a palindrome.
+   - A word containing a single character is also considered a palindrome.
+
+In summary, you compare characters at the ends of the word, moving inwards while checking for 
+equality. If you find any pair of characters that are different,
+ you can immediately conclude that the word is not a palindrome. 
+Otherwise, if you successfully compare all characters without finding any differences and reach the stop conditions, then the word is a palindrome.
